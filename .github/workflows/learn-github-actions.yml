@@ -1,6 +1,6 @@
 # From https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#create-an-example-workflow
 name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: ${{ github.actor }} is learning Node GitHub Actions
 on: [push]
 jobs:
   check-bats-version:
