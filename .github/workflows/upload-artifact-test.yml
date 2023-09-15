@@ -1,0 +1,17 @@
+# From https://docs.github.com/en/actions/learn-github-actions/essential-features-of-github-actions#sharing-data-between-jobs
+name: upload-artifact-test
+run-name: ${{ github.actor }} is learning upload artifact GitHub Actions
+on: [push]
+jobs:
+  upload-artifact-job:
+    name: Save output
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          expr 1 + 1 > output.log
+      - name: Upload output file
+        uses: actions/upload-artifact@v3
+        with:
+          name: output-log-file
+          path: output.log
