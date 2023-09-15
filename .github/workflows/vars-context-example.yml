@@ -33,4 +33,4 @@ jobs:
       with:
         who-to-greet: ${{ vars.GREET_NAME }}
     - name: all-env
-      run: env
+      run: env | sort
