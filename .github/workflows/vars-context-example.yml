@@ -1,4 +1,5 @@
 # From https://docs.github.com/en/actions/learn-github-actions/contexts#example-usage-of-the-vars-context
+name: display-variables
 on:
   workflow_dispatch:
 env:
