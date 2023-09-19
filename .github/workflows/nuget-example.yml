@@ -7,6 +7,10 @@ on: push
 jobs:
   test:
     runs-on: windows-latest
+    # From https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages#example-workflow
+    permissions:
+      contents: read
+      packages: write
     # From https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry
     steps:
       - run: echo "${{ env.USERNAME }}"
