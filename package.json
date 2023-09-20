@@ -1,0 +1,13 @@
+{
+  "name": "@gmzwinge490/publish-nodejs-package-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo TODO: specify build script",
+    "lint": "echo TODO: specify lint script",
+    "test": "echo TODO: specify test script"
+  },
+  "author": "",
+  "license": "ISC"
+}
